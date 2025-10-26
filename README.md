@@ -1,8 +1,8 @@
 # Repository Overview
 This repository demonstrates the complete lifecycle of a modern data pipeline — from raw data ingestion to analytics — built entirely on Azure Databricks using PySpark, Delta Lake, and the Bronze-Silver-Gold architecture. It integrates real-time and batch processing with Databricks Autoloader, Delta Live Tables, and Slowly Changing Dimensions (SCD), showcasing how to design, orchestrate, and optimize a scalable Lakehouse solution.
-/
+<br>
 <img width="1617" height="867" alt="Screenshot 2025-10-24 145738" src="https://github.com/user-attachments/assets/76ce001c-8542-4df9-8ed2-b2d02f7e3c91" />
-/
+<br>
 # Components
 Azure resources: storage account, databricks workspace, unity catalog.
 Autoloader: incremental file ingestion.
@@ -14,12 +14,12 @@ PySpark: definition of functions, classes, transformations, SCD logic.
 Azure Databricks: workspace where Spark clusters run.
 PySpark: for Spark DataFrame API, streaming, transformations.
 Delta Lake: storage layer enabling ACID, time travel, schema enforcement.
-Azure Blob / ADLS Gen2: storage for raw/bronze/silver/gold layers.
+Azure Blob ADLS Gen2: storage for raw/bronze/silver/gold layers.
 Unity Catalog: for data governance.
-Structured Streaming / Autoloader: for ingestion.
-/
+Structured Streaming  Autoloader: for ingestion.
+
 <img width="1515" height="765" alt="Screenshot 2025-10-26 202845" src="https://github.com/user-attachments/assets/a76cb2a2-7071-48bc-9213-5bd54941a55a" />
-/
+
 # Prerequisites
 An Azure account.
 Databricks workspace with required permissions.
@@ -27,13 +27,13 @@ Databricks workspace with required permissions.
 # Project Setup
 **1. Azure Setup**
 a. Azure Resource Setup- Sign in to the Azure Portal Create a new Resource Group.
-/
+
 <img width="1512" height="797" alt="Screenshot 2025-10-26 220235" src="https://github.com/user-attachments/assets/f32454c0-b450-464f-90ba-776d27860ab3" />
-/
+
 b. In the same resource group, create a Storage Account. Select Azure Data Lake Storage Gen2 (ADLS Gen2). Enable Hierarchical Namespace (important for Datalake creation on Azure). Under “Containers,” create: bronze silver gold source and metastore.
-/
+
 <img width="1515" height="795" alt="Screenshot 2025-10-26 220322" src="https://github.com/user-attachments/assets/dc9bed77-5dc6-4791-be0b-bb5474d6b7d9" />
-/
+
 <img width="1519" height="798" alt="Screenshot 2025-10-26 220350" src="https://github.com/user-attachments/assets/783f456d-42b0-4f8e-9c43-edec8d4e4520" />
 
 c. Create an Azure Databricks Workspace In the Azure portal → Resource group → search for Azure Databricks. choose a name, select the same Resource Group and region as the storage account.create with appropriate settings , then click “Launch Workspace.”
