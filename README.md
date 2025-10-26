@@ -1,6 +1,7 @@
 # Repository Overview
 This repository demonstrates the complete lifecycle of a modern data pipeline — from raw data ingestion to analytics — built entirely on Azure Databricks using PySpark, Delta Lake, and the Bronze-Silver-Gold architecture. It integrates real-time and batch processing with Databricks Autoloader, Delta Live Tables, and Slowly Changing Dimensions (SCD), showcasing how to design, orchestrate, and optimize a scalable Lakehouse solution.
-<img width="1917" height="1067" alt="Screenshot 2025-10-24 145738" src="https://github.com/user-attachments/assets/76ce001c-8542-4df9-8ed2-b2d02f7e3c91" />
+
+<img width="1617" height="867" alt="Screenshot 2025-10-24 145738" src="https://github.com/user-attachments/assets/76ce001c-8542-4df9-8ed2-b2d02f7e3c91" />
 
 # Components
 Azure resources: storage account, databricks workspace, unity catalog.
@@ -42,8 +43,8 @@ a. In Azure in the same resource group create an Access connector for Azure Data
 <img width="1919" height="945" alt="Screenshot 2025-10-26 221108" src="https://github.com/user-attachments/assets/29a22a00-f61c-4191-934a-b2761cd23ffa" />
 b. Go to your Storage account, select Access Control Click on Add(Add role Assignment) Search for Storage Blob Data Contributor, select it and than Next, Select Managed Identity than select your Access connector name.
 <img width="1917" height="998" alt="Screenshot 2025-10-26 221700" src="https://github.com/user-attachments/assets/a07aee55-5586-4e48-8a6a-57c935cecc21" />
-<img width="1915" height="1002" alt="Screenshot 2025-10-26 221641" src="https://github.com/user-attachments/assets/ea1a52d4-5346-4f92-9492-bd540deef0b8" />
 <img width="1919" height="994" alt="Screenshot 2025-10-26 221327" src="https://github.com/user-attachments/assets/4c3f708e-3cb2-4b79-979b-ed6c02b45481" />
+<img width="1915" height="1002" alt="Screenshot 2025-10-26 221641" src="https://github.com/user-attachments/assets/ea1a52d4-5346-4f92-9492-bd540deef0b8" />
 c. Go to Databricks Admin Access account In catalog create a metastore with the access connector Id and assign this metastore to the Databricks workspace which was created.
 <img width="1919" height="1055" alt="Screenshot 2025-10-26 221816" src="https://github.com/user-attachments/assets/ed7facec-d483-4ec4-ac81-02ee663d049b" />
 <img width="1918" height="1073" alt="Screenshot 2025-10-26 221804" src="https://github.com/user-attachments/assets/fe8307c5-d387-432a-8620-1921ab99f23d" />
